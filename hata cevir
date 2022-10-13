@@ -1,0 +1,8 @@
+Create trigger uretim yeri on kesinti
+for insert
+As
+if(exists(Select * from inserted where bolge = 'kuzey' and uretim yeri = '1000'))
+Begin
+  raiserror('kuzey bolgeye baskent kesintisi kesinti kaydedilemez',1,1)
+  rollback transaction
+End
