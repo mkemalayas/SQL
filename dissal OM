@@ -1,0 +1,3 @@
+SELECT * FROM kesinti
+WHERE sebep='dissal'
+AND (OM='Sincan' OR OM='Metropol')
