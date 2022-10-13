@@ -1,0 +1,4 @@
+
+SELECT * FROM kesinti
+WHERE uretim yeri='1000'
+AND sebep='dissal'
