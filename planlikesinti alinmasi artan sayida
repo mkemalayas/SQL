@@ -1,0 +1,5 @@
+select planlikesinti.planlikesintino, planlikesinti.planlikesintiadi,count(*) from islem
+left join planlikesinti
+on planlikesinti.planlikesintino=islem.planlikesintino
+group by planlikesinti.planlikesintiadi,planlikesinti.planlikesintino
+order by planlikesinti.planlikesintino
