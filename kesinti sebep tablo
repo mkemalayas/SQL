@@ -1,0 +1,9 @@
+ 
+CREATE TABLE kesintiler
+(
+id int,
+BOLGE varchar(255),
+DO varchar(255),
+OM varchar(255),
+sebep varchar(255)
+);
